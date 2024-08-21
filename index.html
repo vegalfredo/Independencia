@@ -201,12 +201,9 @@
         
         <button class="reload-button" onclick="hardReload()">Actualizar</button>
         <button class="nav-button" onclick="location.href='#01_LLegada_a_la_fiesta'">Llegada a la fiesta</button>
-        <button class="nav-button" onclick="location.href='#02_DISFRAZANDOSE'">DISFRASANDOSE</button>
-        <button class="nav-button" onclick="location.href='#escena_03'">E03</button>
-        <button class="nav-button" onclick="location.href='#escena_04'">E04</button>
-        <button class="nav-button" onclick="location.href='#escena_05'">E05</button>
-        <button class="nav-button" onclick="location.href='#escena_06'">E06</button>
-        <button class="nav-button" onclick="location.href='#escena_07'">E07</button>
+        <button class="nav-button" onclick="location.href='#02_DISFRAZANDOSE'">Disfrazandose</button>
+        <button class="nav-button" onclick="location.href='#03_AL_INTERMEDIO'">Al intermedio</button>
+        
     </div>
 
     <div class="paragraph-container">
@@ -221,6 +218,8 @@
              según él, pasó en nuestro país.
              Entre copas y risas, los 3 amigos van contando que fue lo que ocurrió el 16 de septiembre de 1810 con el famoso
               “Grito de Dolores” y algo de los niños héroes.</p><br>
+
+
         
         <p class="Arial"> <strong>PERSONAJES:</strong></p>
         <p class="Arial"> <strong>Janny Versanchez:</strong>Hombre de padres franceses, gay afeminado, de 35 años aprox. Se siente muy galán y orgulloso de sus raíces francesas.</p>
@@ -234,14 +233,22 @@
         </div>
 
         
-            <p style="color:rgba(5, 94, 247, 0.866);"class="typewriter-font">TRACK 1 tercera llamada y música mexicana</p>
+
+            <p style="color:rgba(5, 94, 247, 0.866);"class="typewriter-font">tercera llamada suena el tiembre</p>
+            <button onclick="playAudio('03 Sonido de timbre.mp3')">Sonido de timbre</button><br>
+        <br>
+
+        <p style="color:rgb(6, 168, 38);"class="typewriter-font">Se ve en el escenario a Chucho terminando de arreglar la casa para la fiesta.</p>
+
+
+                    
+            <p style="color:rgba(5, 94, 247, 0.866);"class="typewriter-font">TRACK 01 Música mexicana</p>
             <button onclick="playAudio('02 Mariachi Vargas Son de la negra.mp3')">Reproducir Música Mexicana</button>
             <button onclick="stopAudio()">Detener Música Mexicana</button>
             <label for="volumeControl">Vol: </label>
             <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5" oninput="setVolume(this.value)" />
+              
         
-        <p style="color:rgb(6, 168, 38);"class="typewriter-font">Se ve en el escenario a Chucho terminando de arreglar la casa para la fiesta.</p>
-        <p style="color:rgb(6, 168, 38);"class="typewriter-font">Suena el timbre.</p>
         <p style="color:rgb(6, 168, 38);"class="typewriter-font">Chucho abre y son sus amigos, se saludan.</p><br>
 
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -561,12 +568,19 @@
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CORREGIDORA(ALEX):</strong>Para eso me gustaba
             <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Entre dientes)</a>
-            *-pinche joto. No comandante Joaquín, para eso les he llamado, para que nos pongamos de acuerdo en cómo le vamos a romper su madre a los Gachupines</p>	
+            ...pinche joto. No comandante Joaquín, para eso les he llamado, para que nos pongamos de acuerdo en cómo le vamos
+             a romper su madre a los Gachupines</p>	
 
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JANNY:</strong>Pero si tú eres Gachupín pinche Alex jajajajaja creo que no te queda ese personaje, e insisto que ese vestido me quedaría mejor a mí, ya, ¡déjenme ser la corregidora!</p>	
+            <strong>JANNY:</strong>Pero si tú eres Gachupín pinche Alex jajajajaja creo que no te queda ese personaje,
+             e insisto que ese vestido me quedaría mejor a mí, ya, ¡déjenme ser la corregidora!</p>
+             
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CORREGIDORA(ALEX):</strong>Que no Janny!!!!! Ya déjame continuar… les decía, ya estoy hasta la madre de que estos señores que se dicen llamar reyes, mantengan al pueblo de la nueva España bajo sus mandatos y liderazgos, en donde solo son beneficiados los españoles y la clase alta. Yo digo que en octubre de este año convoquemos al pueblo y nos alcemos en armas para revocar al reinado español.</p>	
+            <strong>CORREGIDORA(ALEX):</strong>Que no Janny!!!!! Ya déjame continuar… les decía, ya estoy hasta la madre
+             de que estos señores que se dicen llamar reyes, mantengan al pueblo de la nueva España bajo sus mandatos y liderazgos,
+              en donde solo son beneficiados los españoles y la clase alta.
+               Yo digo que en octubre de este año convoquemos al pueblo y nos alcemos en armas para revocar al reinado español.</p>
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>¿En qué año estamos?</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -587,17 +601,44 @@
             <strong>HIDALGO(CHUCHO):</strong>No sea pen…. Comandante Joaquín Arias, lo que digo es que ya estoy harto de que nos traten como basura y que haya esclavitud en este país, nosotros tenemos todas las riquezas naturales y porque se las tenemos que seguir dando a los españoles. Nosotros podemos ser un gran país independiente</p>	
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CORREGIDORA(ALEX):</strong>Pues no se diga más, así le hacemos, nos vemos el 10 de octubre para levantarnos en armas</p>	
+        
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JOAQUÍN(JANNY):</strong>(Saca su celular) Hola Juan Ochoa y Sargento Mayor del Regimiento José Alonso? De este lado habla Joaquín Arias y es que fíjese que no está usted para saberlo ni yo para contárselo, pero le tengo un chismesote (Suena la canción de ventaneando) mis amiguis están haciendo una conspiración para levantarse en armas este próximo 10 de octubre de 1810, porfis no me vayan a encarcelar yo les voy a mandar todas las cartas que tengo de Allende e Hidalgo en donde viene toda la información de la conspiración para que me dejen libre porfis y de mí no vuelven a saber jamás, me voy a Celaya con mis insurgentes y listo!!!! Va que va trato hecho, ya se las mandé por mail.</p>	
+            <strong>JOAQUÍN(JANNY):</strong>
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Saca su celular) </a>
+            Hola Juan Ochoa y Sargento Mayor del Regimiento José Alonso? De este lado habla Joaquín Arias
+             y es que fíjese que no está usted para saberlo ni yo para contárselo, pero le tengo un chismesote
+             <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Suena la canción de ventaneando)</a>
+               mis amiguis están haciendo una conspiración para levantarse en armas este próximo 10 de octubre de 1810, 
+               porfis no me vayan a encarcelar yo les voy a mandar todas las cartas que tengo de Allende e Hidalgo 
+               en donde viene toda la información de la conspiración para que me dejen libre porfis y de mí no vuelven a saber jamás,
+                me voy a Celaya con mis insurgentes y listo!!!! Va que va trato hecho, ya se las mandé por mail.</p>
+
+        
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CHUCHO:</strong>(Bambalinas) Tampoco había celulares ni mails, ¡no manches!, ¡¿Que pendejadas están haciendo?!</p>	
+            <strong>CHUCHO:</strong>
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Bambalinas)</a>
+            Tampoco había celulares ni mails, ¡no manches!, ¡¿Que pendejadas están haciendo?!</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JOAQUÍN(JANNY):</strong>Ay ya para hacerlo más rapidito, si no en lo que llegan las cartas ya se nos fue la mitad de la obra (Sale de escena)</p>	
+            <strong>JOAQUÍN(JANNY):</strong>Ay ya para hacerlo más rapidito, si no en lo que llegan las cartas ya se nos fue
+             la mitad de la obra
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Sale de escena)</a></p>
+                          
+        
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CORREGIDORA(ALEX):</strong>(Entra enojada) Ay hijo de la chin… Este Joaquín ya nos delató, tengo que avisarle a Ignacio Pérez que por cierto vive aquí abajo, que ya nos cacharon para que iniciemos este pedo a la de ya!!!!! (Da 3 taconazos) Despiértate pinche Pérez que esto ya valió madres!!!!!! (En bambalinas Chucho)</p>	
+            <strong>CORREGIDORA(ALEX):</strong>
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Entra enojada)</a>
+            Ay hijo de la chin… Este Joaquín ya nos delató, tengo que avisarle a Ignacio Pérez 
+             que por cierto vive aquí abajo, que ya nos cacharon para que iniciemos este pedo a la de ¡ya!
+             <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Da 3 taconazos)</a>
+              Despiértate pinche Pérez que esto ya valió madres!!!!!!
+              <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (En bambalinas Chucho)</a></p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>IGNACIO PEREZ(CHUCHO):</strong>Que pasó Josefa es bien pinche temprano y ando bien crudo, ¿porque tanto escándalo?,¿Y porque ocupas la señal de emergencia????</p>	
-        <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
+            <strong>IGNACIO PEREZ(CHUCHO):</strong>Que pasó Josefa es bien pinche temprano y ando bien crudo,
+             ¿porque tanto escándalo?,¿Y porque ocupas la señal de emergencia????</p>	
+        
+            <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CORREGIDORA(ALEX):</strong>Porque el pinche Joaquín Arias nos delató y ya le llegó el chisme hasta el Virrey Francisco Xavier Venegas y nos van a chingar, así que dile a Hidalgo que se ponga las pilas y convoque de una vez al pueblo!!!! ¡¡¡¡¡¡Así que hoy 15 de septiembre lánzate a San Miguel para que le avises a Juan Aldama qué está pasando y que ese wey se vaya a Dolores para avisarle a Allende e Hidalgo, pero córrele caon!!!!!!</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>IGNACIO PEREZ(CHUCHO):</strong>Pero me voy a hacer todo un día cabalgando hasta San Miguel, no chingues Josefa</p>	
@@ -608,45 +649,83 @@
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CORREGIDORA(ALEX):</strong>¡¿Si te das cuenta de que estoy encerrada pendejo?!, Mi esposo me encerró por miedo a que me fueran a hacer algo, ya sabes que me pongo bien loca con estas cosas. Ya vete a San Miguel de Allende a avisarle a Aldama y me avisas cualquier cosa</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>IGNACIO PEREZ(CHUCHO):</strong>Sale pues, tu tranquila y yo nervioso, ahorita mismo me lanzo para allá. (Sale Josefa, entra a escena Juan Aldama en su caballo de palo)</p>	
+            <strong>IGNACIO PEREZ(CHUCHO):</strong>Sale pues, tu tranquila y yo nervioso, ahorita mismo me lanzo para allá.
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font">(Sale Josefa, entra a escena Juan Aldama en su caballo de palo)</a></p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JUAN ALDAMA(JANNY):</strong>Yo soy Juan Aldama y voy hacia Dolores a avisarle a Hidalgo y Allende que ya nos cacharon…. Ay, hijo de su inche madre, si está re lejos Dolores, ya es la madrugada del 16 de septiembre de 1810 y todavía no veo la iglesia de Hidalgo, ¡¡¡¡Ay mira!!!! Ahí está (Toca la puerta)</p>	
+            <strong>JUAN ALDAMA(JANNY):</strong>Yo soy Juan Aldama y voy hacia Dolores a avisarle a Hidalgo y Allende que ya nos cacharon…
+             Ay, hijo de su inche madre, si está re lejos Dolores, ya es la madrugada del 16 de septiembre de 1810
+              y todavía no veo la iglesia de Hidalgo, ¡¡¡¡Ay mira!!!! Ahí está
+              <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Toca la puerta)</a></p>	
+
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>HIDALGO(CHUCHO):</strong>¡Que paso, que paso vamos ahí!, ¿Quién toca con tanta desesperación?</p>	
-        #N/D
-            <strong>JUAN ALDAMA(YANNI):</strong>Soy yo, Juan Aldama, es que me dijo Ignacio Pérez, que le dijo la Corregidora, que el pinche Joaquín Arias nos delató y ya el Virrey sabe de la conspiración, entonces…</p>	
+
+        <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
+            <strong>JUAN ALDAMA(JANNY):</strong>Soy yo, Juan Aldama, es que me dijo Ignacio Pérez, que le dijo la Corregidora,
+             que el pinche Joaquín Arias nos delató y ya el Virrey sabe de la conspiración, entonces…</p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>ALLENDE(ALEX):</strong>(Sale a escena caracterizado) Bueno, bueno ya ya ya, si estamos viendo la obra, pues no se diga más, vamos a adelantar este pedo</p>	
+            <strong>ALLENDE(ALEX):</strong>
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Sale a escena caracterizado)</a>            
+             Bueno, bueno ya ya ya, si estamos viendo la obra, pues no se diga más, vamos a adelantar este pedo</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JUAN ALDAMA(JANNY):</strong>¿Y tú ahora quién eres?</p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>ALLENDE(ALEX):</strong>Pues que no me ves??? Soy el teniente general Ignacio María de Allende y Unzaga mejor conocido como Ignacio Allende, nací el 21 de enero de 1769 en San Miguel el Grande, actual San Miguel de Allende, Guanajuato. soy un militar y revolucionario novohispano que me destaco como uno de los caudillos principales de la primera etapa de la Guerra de Independencia de México. Estudié en el Colegio de San Francisco de Sales, donde conocí a los hermanos Aldama, y posteriormente luché…</p>	
+            <strong>ALLENDE(ALEX):</strong>Pues que no me ves??? Soy el teniente general Ignacio María de Allende y Unzaga 
+            mejor conocido como Ignacio Allende, nací el 21 de enero de 1769 en San Miguel el Grande, actual San Miguel de Allende,
+             Guanajuato. soy un militar y revolucionario novohispano que me destaco como uno de los caudillos principales 
+             de la primera etapa de la Guerra de Independencia de México. 
+             Estudié en el Colegio de San Francisco de Sales, donde conocí a los hermanos Aldama, y posteriormente luché…</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JUAN ALDAMA(JANNY):</strong>Ay ya ya ya cálmate, no nos vas a dar toda tu biografía aquí no mames, ya mejor haz un monólogo</p>	
+            <strong>JUAN ALDAMA(JANNY):</strong>Ay ya ya ya cálmate, no nos vas a dar toda tu biografía aquí no mames,
+             ya mejor haz un monólogo</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>HIDALGO(CHUCHO):</strong>Bueno a ver cabrones!!!! Entonces ya valió madre pues ahorita mismo voy a tocar las campanas de la iglesia para convocar al pueblo y de una vez empezar la independencia, ¿que les parece?</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JUAN ALDAMA(JANNY):</strong>Pero si tenemos bien poquitas armas, yo digo que nos esperemos tantito porque nos van a romper nuestras madres.</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>HIDALGO(CHUCHO):</strong>¡Ni MADRES! (Va por el estandarte de la virgen de Guadalupe) Aquí tengo esto!!!! (Se los enseña)</p>	
+            <strong>HIDALGO(CHUCHO):</strong>¡Ni MADRES! 
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Va por el estandarte de la virgen de Guadalupe)</a>
+             ¡Aquí tengo esto!
+             <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Se los enseña) </a></p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALLENDE(ALEX):</strong>No pues si está muy bonito y todo, pero no creo que ese trapito nos vaya a cubrir de las balas de los españoles.</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>HIDALGO(CHUCHO):</strong>No wey!!!! Es para que nos proteja la virgencita de Guadalupe y así animar al pueblo a que se levante en armas</p>	
+            <strong>HIDALGO(CHUCHO):</strong>¡No wey! Es para que nos proteja la virgencita de Guadalupe 
+            y así animar al pueblo a que se levante en armas</p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALLENDE(ALEX):</strong>A no, pues así pus si, pos órale vas mi Padrecito, haga lo suyo, tóquese las campanas</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>HIDALGO(CHUCHO):</strong>¿Que paso, que paso?, Ya nos llevamos así, si yo soy cura</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JUAN ALDAMA(JANNY):</strong>Si quiere yo se las toco.</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>HIDALGO(CHUCHO):</strong>No, no hay pedo, ahorita me subo a la torre y yo las toco, ahorita regreso.</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JUAN ALDAMA(JANNY):</strong>Pero a donde te vas a subir? Si tu casa es de un piso y no tienes balcón.</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>HIDALGO(CHUCHO):</strong>No hay pedo, ahorita me subo a la azotea (Sale de escena)</p>	
+            <strong>HIDALGO(CHUCHO):</strong>No hay pedo, ahorita me subo a la azotea
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Sale de escena) </a></p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>Ay que bonito nos está quedando, ¿ahorita puedo ser yo la corregidora??? Ándale siiiiiii</p>	
+
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Pero si la corregidora ahorita ya no sale, ¡gilipollas!</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -654,9 +733,23 @@
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Tío, tío pero ¿qué os ha pasao?</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JANNY:</strong>Ay no!!!! este wey ahora si se echó el grito de dolores!!!!!! (Los dos gritan y salen de escena) Chucho!!!!!!!!!</p>	
+            <strong>JANNY:</strong>¡Ay no! este wey ahora si se echó el ¡grito de dolores!
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Los dos gritan y salen de escena) </a>
+             ¡¡Chucho!!</p><br>
+
+
+        <h2 id="03_AL_INTERMEDIO"></h2>
+        <div class="inline-container">
+        <h2>03 Al intermedio</h2>
+        </div>
+
+
+        <span style="font-weight:bold;font-size:2em;font-family:'Trebuchet MS', sans-serif;color:rgb(18, 181, 240);">I N T E R M E D I O</span><br><br><br>
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JANNY:</strong>Pinche Chucho ahora si me espantaste horrible, pensé que te habíamos perdido</p>	
+            <strong>JANNY:</strong>Pinche Chucho ahora si me espantaste horrible, pensé que te habíamos perdido</p>
+
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Nombre, este wey es mexicano, esos cabrones son como gatos, tienen 7 vidas y siempre caen parados.</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -667,8 +760,13 @@
             <strong>ALEX:</strong>Jajajaja hasta crees, si no pregúntale a las esposas de los aquí presentes, o peor aún, a la vieja de Chucho, que no por nada lo dejo.</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>Oye, pero a ver síguenos contando como les partieron su madre los mexicanos a los españoles el 15 de septiembre, eso sí está muy divertido.</p>	
+        
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>ALEX:</strong>Par de ignorantes, ni siquiera fue el 15 de septiembre, fue el 16 de septiembre, pero como Porfirio Díaz cumplía años el 15 pues lo pasó para esa fecha la celebración, para que siempre en su cumpleaños se hiciera un desmadre en México, pues le encantaba el pedo igual que a todos los mexicanos</p>	
+            <strong>ALEX:</strong>Par de ignorantes, ni siquiera fue el 15 de septiembre, fue el 16 de septiembre,
+             pero como Porfirio Díaz cumplía años el 15 pues lo pasó para esa fecha la celebración,
+              para que siempre en su cumpleaños se hiciera un desmadre en México, pues le encantaba el pedo igual que
+               a todos los mexicanos</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>A Caon eso no sabía y mira que yo pensaba que los españoles eran los pendejos</p>	
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -689,10 +787,19 @@
             <strong>JANNY:</strong>Pues a mi primo se la arrimo así que no lo veo tan mal.</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>Chale, y los albureros somos nosotros jajajaja te pasas Janny</p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>ALEX:</strong>Oye, lo que si no se es ¿porque a septiembre le llaman el mes patrio? y en este mes tienen un chingo de fiestas?</p>	
+            <strong>ALEX:</strong>Oye, lo que sí no sé, es ¿porqué a septiembre le llaman el mes patrio?
+             y ¿por que en este mes tienen un chingo de fiestas?</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CHUCHO:</strong>A pues porque se celebran varias cosas en este mes, como …. Como…. (Al público) ayúdenme no sean así (Esperemos responda alguien los del 13 de septiembre, si no entra Chucho recordando) Ándale el 13 de septiembre que también fue una fecha bien importante para los mexicanos, porque celebramos la gesta heroica de Chapultepec que fue el 13 de septiembre de 1847.</p>	
+            <strong>CHUCHO:</strong>A pues porque se celebran varias cosas en este mes, como …. Como…. 
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Al público)</a>            
+             ayúdenme no sean así
+             <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Esperemos responda alguien los del 13 de septiembre, si no entra Chucho recordando)</a>
+              Ándale el 13 de septiembre que también fue una fecha bien importante para los mexicanos,
+               porque celebramos la gesta heroica de Chapultepec que fue el 13 de septiembre de 1847.</p>
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>Ah sí, algo he oído de los niños héroes, que defendieron el castillo de Chapultepec, ¿verdad?</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -707,8 +814,12 @@
             <strong>CHUCHO:</strong>No, no ganamos, pero limpios no se fueron los perros, si les dimos batalla</p>	
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Les dimos, somos un chingo, seguro tú te hubieras echado a correr y huido del castillo</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CHUCHO:</strong>Nel, nel nel ni que fuera el Janny, yo sí me hubiera tocado, (Sueña) hubiera sido el mismísimo Juan Escutia…</p>	
+            <strong>CHUCHO:</strong>Nel, nel nel ni que fuera el Janny, yo sí me hubiera tocado,
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Sueña)</a>           
+             hubiera sido el mismísimo Juan Escutia…</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>Pero entonces, ¿qué paso?</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -729,8 +840,18 @@
             <strong>JANNY:</strong>No pues la verdad que sí, ¡que valientes!</p>	
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Oye wey, ¿y te sabes los nombres de los 6 niños héroes que quedaron hasta el final de la batalla?</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CHUCHO:</strong>Claro…. (dudoso) claro… fue este… ahora verás… El Juan Escutia obvio, este… (Al público) No manchen otra vez ayúdenme…. (Deja que el público los diga, hasta donde se lo sepan e interrumpe) Bueno… además esa clase me la dieron en la primaria y la neta ya tiene un chingo y no soy maestro de historia caon, así que mejor ya a lo que nos truje y vamos a seguir echando tequila, que para eso también somos rebuenos los mexicanos… ¡Salud!</p>	
+            <strong>CHUCHO:</strong>Claro…. 
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font">(dudoso)</a>
+            claro… fue este… ahora verás… El Juan Escutia obvio, este…
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Al público) </a>
+              No manchen otra vez ayúdenme….
+              <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Deja que el público los diga, hasta donde se lo sepan e interrumpe)</a>
+              Bueno… además esa clase me la dieron en la primaria y la neta ya tiene un chingo
+               y no soy maestro de historia caon, así que mejor ya a lo que nos truje y vamos a 
+               seguir echando tequila, que para eso también somos rebuenos los mexicanos… ¡Salud!</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>Eso sí, yo conozco a varios mexicanos que son de garganta bien profunda, así como tú.</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -753,14 +874,27 @@
             <strong>JANNY:</strong>Que asco que te metas con tu familia… ¡enfermo!</p>	
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Y dale con lo mismo…no menso, o sea que así le decimos… ay ya olvídalo</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CHUCHO:</strong>(Ya medio pedo) bueno, bueno, ya amigos, vamos a brindar por mi país, por el país que me vio nacer y que a ustedes tanto a acogido</p>	
+            <strong>CHUCHO:</strong>
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Ya medio pedo) </a>
+             bueno, bueno, ya amigos, vamos a brindar por mi país, por el país que me vio nacer y que a ustedes tanto a acogido</p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>No, no, no ni madres, a mí no me ha cogido nadie, lo has de decir por Janny que a ese si ya se lo echó medio México.</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JANNY:</strong>¡Ay claro que no!, solo han sido como… 10 (los otros dos dicen ay aja) bueno, como a 20… (Ay ajá) bueno yaaaaaa, ¡viva México! (Los 3 gritan) ¡¡¡¡¡Viva México, Salud!!!!!</p>	
+            <strong>JANNY:</strong>¡Ay claro que no!, solo han sido como… 10
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (los otros dos dicen ay ajá) </a>
+             bueno, como a 20…
+             <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Ay ajá) </a>
+               bueno yaaaaaa, ¡viva México!
+               <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Los 3 gritan)</a>
+                ¡¡¡¡¡Viva México, Salud!!!!!</p>
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>Ay hijo de su inche madre, este tequila ya me pegó, está bien fuerte, ¿Este fue el que trajiste tu verdad Alex?</p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>Así es tío, te digo que es del meritito Jalisco, está a toda madre, este si es Tequila no tu pinche Don Julio.</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -773,8 +907,12 @@
             <strong>ALEX:</strong>Y dale con tus joterías.</p>	
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>Si Janny ya párale, a ti nada más te entró el Don Julio y se te empieza a enchuecar más la mano.</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JANNY:</strong>(Haciendo alusión al sexo) ¿Y tu como sabes de ya me entró el don Julio?, si esa información no se las he dado, yo solo dije que me gustaba</p>	
+            <strong>JANNY:</strong>
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Haciendo alusión al sexo)</a>
+             ¿Y tu como sabes de ya me entró el don Julio?, si esa información no se las he dado, yo solo dije que me gustaba</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>No wey, que cuando te pones pedo te aflora la quinceañera que llevas dentro.</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -811,8 +949,12 @@
             <strong>ALEX:</strong>Pues que los pinches franceses….</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>JANNY:</strong>Bueno, ya, ya, ya ese es otro tema, estamos en septiembre. Ya ponte la música Chucho</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>CHUCHO:</strong>Ya estás, (Buscando música) y ahí luego me cuentas que pasó el 5 de mayo eeeee para echarme un pollito con el Francesito también</p>	
+            <strong>CHUCHO:</strong>Ya estás, 
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Buscando música)</a>
+             y ahí luego me cuentas que pasó el 5 de mayo eeeee para echarme un pollito con el Francesito también</p>	
+
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>Que bien la estamos pasando amigos, netas gracias por venir.</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -831,8 +973,11 @@
             <strong>ALEX:</strong>¡Coño que la Corregidora ya no sale wey!</p>	
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>a ver amigo el honor es todo tuyo.</p>	
+
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
-            <strong>JANNY:</strong>Entonces yo pido ser la señora Costilla (Agarra la falda)</p>	
+            <strong>JANNY:</strong>Entonces yo pido ser la señora Costilla
+            <a style="color:rgb(6, 168, 38);"class="typewriter-font"> (Agarra la falda)</a></p>	
+
         <p class="Arial"><img src="españa.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>ALEX:</strong>¡Esa mamada!, Y ahora quien es la señora Costilla?</p>	
         <p class="Arial"><img src="francia.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
@@ -844,20 +989,9 @@
         <p class="Arial"><img src="mexico.png" style="vertical-align: middle; margin-right: 1px; width: 1.3%;">
             <strong>CHUCHO:</strong>¡mexicanos!, ¡Viva la Independencia Nacional!, ¡Vivan los héroes que nos dieron Patria y Libertad!, ¡Viva Hidalgo!, ¡Viva Morelos!, ¡Viva Allende!, ¡Viva la Corregidora!, ¡Viva Aldama!, ¡Viva Guerrero!, ¡Viva México!</p>	
 
+        <span style="font-weight:bold;font-size:3em;font-family:'Trebuchet MS', sans-serif;color:rgb(222, 9, 9);">FIN</span>
 
 
-
-
-
-        
-
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
